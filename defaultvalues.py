@@ -1,4 +1,4 @@
-repository_location = ""
+repository_location = "C:/Users/Rischer/OneDrive - Helmut-Schmidt-Universität/Dokumente/GitLab/Simple-German-Corpus"
 dataset_location = f"{repository_location}/Datasets"
 results_location = f"{repository_location}/results"
 website_sample_location = f"{results_location}/website_samples.pkl"

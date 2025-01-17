@@ -53,14 +53,14 @@ def calculate_idf(articles: list[tuple[str, str]]):
         word_idf = utl.calculate_full_word_idf(
             unnested_articles, **kwargs_gram)
         print("Calculated new word idf")
-        with open(f"{results_location}/word_idf.json", 'w') as fp:
-            json.dump([idf_article_hash, word_idf], fp, ensure_ascii=False)
+        with open(f"{results_location}/word_idf.json", 'w', encoding='utf-8') as fp:
+            json.dump([idf_article_hash, word_idf], fp, ensure_ascii=False, indent=2)
 
     # check for n-gram idf (and calculate if necessary)
     found = False
     n_gram_idf = dict()
     if Path(f"{results_location}/{n}_gram_idf.json").exists():
-        with open(f"{results_location}/{n}_gram_idf.json", 'r') as fp:
+        with open(f"{results_location}/{n}_gram_idf.json", 'r', encoding='utf-8') as fp:
             hash, n_gram_idf = json.load(fp)
             if hash == idf_article_hash:
                 found = True
@@ -69,8 +69,8 @@ def calculate_idf(articles: list[tuple[str, str]]):
         n_gram_idf = utl.calculate_full_n_gram_idf(
             unnested_articles, n, **kwargs_gram)
         print("Calculated new n gram idf")
-        with open(f"{results_location}/{n}_gram_idf.json", 'w') as fp:
-            json.dump([idf_article_hash, n_gram_idf], fp, ensure_ascii=False)
+        with open(f"{results_location}/{n}_gram_idf.json", 'w', encoding='utf-8') as fp:
+            json.dump([idf_article_hash, n_gram_idf], fp, ensure_ascii=False, indent=2)
 
     return word_idf, n_gram_idf
 
@@ -197,7 +197,7 @@ def parallel(simple_name: str, normal_name: str, simple_text: str, normal_text: 
                     except ValueError as err:
                         print(
                             f"ValueError raised by {simple_file} - {normal_file}")
-                        with open("error_log.txt", "a", encoding="utf-8") as fp:
+                        with open("error_log.txt", "a") as fp:
                             fp.write(
                                 f"simple_file:{simple_file} - normal_file:{normal_file}\n\tsim_measure:{sim_measure} - matching:{matching} - thresh:{sd_threshold}\n")
                             fp.write(f"{sim_matrix}")
@@ -205,7 +205,7 @@ def parallel(simple_name: str, normal_name: str, simple_text: str, normal_text: 
                         continue
 
                     # write the end result of the distance calculation
-                    with open(filename, 'w') as fp:
+                    with open(filename, 'w', encoding='utf-8') as fp:
                         json.dump(results, fp, ensure_ascii=False, indent=2)
 
                 # add the file to the header
