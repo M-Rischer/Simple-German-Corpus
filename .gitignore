@@ -9,3 +9,4 @@ results/*
 !results/website_samples.pkl
 .txt
 .xlsx
+.json
