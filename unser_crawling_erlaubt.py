@@ -109,20 +109,13 @@ def process_excel(input_file: str, output_file: str, txt_file: str, user_agent: 
     # Excel-Datei laden
     df = pd.read_excel(input_file)
 
-    # Annahme: URLs sind in der ersten und zweiten Spalte
-    if df.shape[1] < 2:
-        print("Die Eingabetabelle benötigt mindestens zwei Spalten für URLs.")
-        return
-
     urls_col1 = df.iloc[:, 0]  # Erste Spalte
-    urls_col2 = df.iloc[:, 1]  # Zweite Spalte
 
     # Set zum Speichern von einzigartigen robots.txt Links
     robots_urls = set()
 
     # Ergebnisse prüfen und speichern
     results_col1 = []
-    results_col2 = []
     for url in urls_col1:
         if pd.notna(url):
             url = url.strip()  # Entfernen von möglichen Leerzeichen
@@ -141,33 +134,13 @@ def process_excel(input_file: str, output_file: str, txt_file: str, user_agent: 
         else:
             results_col1.append("")  # Leerer Eintrag, wenn URL fehlt
 
-    for url in urls_col2:
-        if pd.notna(url):
-            url = url.strip()  # Entfernen von möglichen Leerzeichen
-            result = is_crawling_allowed(url, user_agent)
-            results_col2.append(result)
-            if result == "Ja":  # Nur speichern, wenn Crawling erlaubt ist und robots.txt existiert
-                parsed_url = urlparse(url)
-                robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
-                # Nur URLs mit bestehendem robots.txt in robots_links.txt speichern
-                try:
-                    response = requests.get(robots_url)
-                    if response.status_code == 200:
-                        robots_urls.add(robots_url)
-                except requests.RequestException:
-                    pass
-        else:
-            results_col2.append("")  # Leerer Eintrag, wenn URL fehlt
 
     # Sicherstellen, dass die Listen die gleiche Länge wie der DataFrame haben
     while len(results_col1) < len(df):
         results_col1.append("")  # Füge leere Werte hinzu, wenn zu wenig Werte in Spalte 1 sind
-    while len(results_col2) < len(df):
-        results_col2.append("")  # Füge leere Werte hinzu, wenn zu wenig Werte in Spalte 2 sind
-
+   
     # Ergebnisse zum DataFrame hinzufügen
     df["Crawling erlaubt (Spalte 1)"] = results_col1
-    df["Crawling erlaubt (Spalte 2)"] = results_col2
 
     # Ausgabe in neue Excel-Datei speichern
     df.to_excel(output_file, index=False)
@@ -182,6 +155,6 @@ def process_excel(input_file: str, output_file: str, txt_file: str, user_agent: 
 
 if __name__ == "__main__":
     input_excel = "URLs.xlsx"  # Eingabe-Excel-Datei mit URLs
-    output_excel = "URLs_results.xlsx"  # Ausgabe-Excel-Datei mit Ergebnissen
+    output_excel = "URLs_crawling_results.xlsx"  # Ausgabe-Excel-Datei mit Ergebnissen
     output_txt = "robots_links.txt"  # Datei für die gespeicherten robots.txt Links
     process_excel(input_excel, output_excel, output_txt)
