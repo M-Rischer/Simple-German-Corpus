@@ -3,6 +3,7 @@ import json
 import openpyxl
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
+import defaultvalues as dfv
 
 def parse_json_files(root_folder, output_excel):
     data_pairs = []  # Use a list to maintain the order of pairs
@@ -73,7 +74,7 @@ def parse_json_files(root_folder, output_excel):
     workbook.save(output_excel)
 
 if __name__ == "__main__":
-    root_folder = "C:/Users/Rischer/OneDrive - Helmut-Schmidt-Universität/Dokumente/GitLab/Simple-German-Corpus"
+    root_folder = dfv.repository_location
     output_excel = "urls.xlsx"
     parse_json_files(root_folder, output_excel)
     print(f"Excel file '{output_excel}' created successfully.")
