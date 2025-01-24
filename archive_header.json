@@ -743,14 +743,6 @@
         "archivierte_url": "http://web.archive.org/web/20250117110236/https://www.hamburgische-buergerschaft.de/unsere-arbeit/die-aufgaben",
         "original_url": "https://www.hamburgische-buergerschaft.de/unsere-arbeit/die-aufgaben"
     },
-    "https://www.hamburgische-buergerschaft.de/unsere-arbeit": {
-        "archivierte_url": "http://web.archive.org/web/20250116100501/https://www.hamburgische-buergerschaft.de/unsere-arbeit",
-        "original_url": "https://www.hamburgische-buergerschaft.de/unsere-arbeit"
-    },
-    "https://psych-info.de/uber-uns/": {
-        "archivierte_url": "http://web.archive.org/web/20250116100534/https://psych-info.de/uber-uns/",
-        "original_url": "https://psych-info.de/uber-uns/"
-    },
     "https://www.hamburg.de/politik-und-verwaltung/behoerden/sozialbehoerde/einrichtungen/verfahrenslotsen/verfahrenslotsen-43322": {
         "archivierte_url": "http://web.archive.org/web/20250117172908/https://www.hamburg.de/politik-und-verwaltung/behoerden/sozialbehoerde/einrichtungen/verfahrenslotsen/verfahrenslotsen-43322",
         "original_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/sozialbehoerde/einrichtungen/verfahrenslotsen/verfahrenslotsen-43322"
@@ -910,5 +902,149 @@
     "https://leichtesprache.specialolympics.de/sport/unified-sports/ ": {
         "archivierte_url": "http://web.archive.org/web/20250117191835/https://leichtesprache.specialolympics.de/sport/unified-sports/",
         "original_url": "https://leichtesprache.specialolympics.de/sport/unified-sports/ "
+    },
+    "https://www.soziales.bremen.de/sixcms/media.php/13/barrierefrei_LS_Patienten-Verfuegung_2023-09-01.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240809225311/https://www.soziales.bremen.de/sixcms/media.php/13/barrierefrei_LS_Patienten-Verfuegung_2023-09-01.pdf",
+        "original_url": "https://www.soziales.bremen.de/sixcms/media.php/13/barrierefrei_LS_Patienten-Verfuegung_2023-09-01.pdf"
+    },
+    "https://www.bmj.de/SharedDocs/Publikationen/DE/Broschueren/Vorsorgevollmacht_LeichteSprache.pdf?__blob=publicationFile&v=11": {
+        "archivierte_url": "http://web.archive.org/web/20241214132559/https://www.bmj.de/SharedDocs/Publikationen/DE/Broschueren/Vorsorgevollmacht_LeichteSprache.pdf?__blob=publicationFile&v=11",
+        "original_url": "https://www.bmj.de/SharedDocs/Publikationen/DE/Broschueren/Vorsorgevollmacht_LeichteSprache.pdf?__blob=publicationFile&v=11"
+    },
+    "https://lhhh.de/wp-content/uploads/2022/10/2022-09-28-Projektergebnisse_PZP_LS_final.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124104945/https://lhhh.de/wp-content/uploads/2022/10/2022-09-28-Projektergebnisse_PZP_LS_final.pdf",
+        "original_url": "https://lhhh.de/wp-content/uploads/2022/10/2022-09-28-Projektergebnisse_PZP_LS_final.pdf"
+    },
+    "https://psych-info.de/wp-content/uploads/2023/04/2023_04_27-_Psych-Info_LS_final.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105113/https://psych-info.de/wp-content/uploads/2023/04/2023_04_27-_Psych-Info_LS_final.pdf",
+        "original_url": "https://psych-info.de/wp-content/uploads/2023/04/2023_04_27-_Psych-Info_LS_final.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/40214/23621d295ba09b3911d6afae2e060112/broschuere-schweba-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250118024853/https://www.hamburg.de/resource/blob/40214/23621d295ba09b3911d6afae2e060112/broschuere-schweba-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/40214/23621d295ba09b3911d6afae2e060112/broschuere-schweba-leichte-sprache-data.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/77822/25c1b52d9d27bad4133d768c850ab0d1/downolad-pdf-muetterberatung-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105254/https://www.hamburg.de/resource/blob/77822/25c1b52d9d27bad4133d768c850ab0d1/downolad-pdf-muetterberatung-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/77822/25c1b52d9d27bad4133d768c850ab0d1/downolad-pdf-muetterberatung-leichte-sprache-data.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/77854/341698006818815ab4582c8c757490da/downolad-pdf-sozialpsychatrischer-dienst-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105301/https://www.hamburg.de/resource/blob/77854/341698006818815ab4582c8c757490da/downolad-pdf-sozialpsychatrischer-dienst-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/77854/341698006818815ab4582c8c757490da/downolad-pdf-sozialpsychatrischer-dienst-leichte-sprache-data.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/77810/3135d6602adee1745cb061f3ff7466b6/downolad-pdf-koerperbehinderten-beratung-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105310/https://www.hamburg.de/resource/blob/77810/3135d6602adee1745cb061f3ff7466b6/downolad-pdf-koerperbehinderten-beratung-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/77810/3135d6602adee1745cb061f3ff7466b6/downolad-pdf-koerperbehinderten-beratung-leichte-sprache-data.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/78758/45691093f61a75216ab38c4611889dc9/downolad-pdf-gartenabfaelle-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105427/https://www.hamburg.de/resource/blob/78758/45691093f61a75216ab38c4611889dc9/downolad-pdf-gartenabfaelle-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/78758/45691093f61a75216ab38c4611889dc9/downolad-pdf-gartenabfaelle-leichte-sprache-data.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/78764/2994b16e0c1097e1c8b6aed0be92b77c/downolad-pdf-putzwasser-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105435/https://www.hamburg.de/resource/blob/78764/2994b16e0c1097e1c8b6aed0be92b77c/downolad-pdf-putzwasser-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/78764/2994b16e0c1097e1c8b6aed0be92b77c/downolad-pdf-putzwasser-leichte-sprache-data.pdf"
+    },
+    "https://leichtesprache.lvr.de/media/www_lvr_de_ls/wohnen/betreuungsvertragleichtesprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240306101320/https://leichtesprache.lvr.de/media/www_lvr_de_ls/wohnen/betreuungsvertragleichtesprache.pdf",
+        "original_url": "https://leichtesprache.lvr.de/media/www_lvr_de_ls/wohnen/betreuungsvertragleichtesprache.pdf"
+    },
+    "https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_suche_eine_neue_Wohnung_barr.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250123155239/https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_suche_eine_neue_Wohnung_barr.pdf",
+        "original_url": "https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_suche_eine_neue_Wohnung_barr.pdf"
+    },
+    "https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_plane_meinen_Umzug_barr.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105524/https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_plane_meinen_Umzug_barr.pdf",
+        "original_url": "https://www.lwv-hessen.de/fileadmin/user_upload/daten/Dokumente/Broschueren_barrierefr/Ich_ziehe_um_Ich_plane_meinen_Umzug_barr.pdf"
+    },
+    "https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Betreuung-in-Leichter-Sprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124105615/https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Betreuung-in-Leichter-Sprache.pdf",
+        "original_url": "https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Betreuung-in-Leichter-Sprache.pdf"
+    },
+    "https://delivery-aktion-mensch.stylelabs.cloud/api/public/content/AM_Jahresbericht_2021_Leichte-Sprache.pdf?v=62e1dacd": {
+        "archivierte_url": "http://web.archive.org/web/20250116101227/https://delivery-aktion-mensch.stylelabs.cloud/api/public/content/AM_Jahresbericht_2021_Leichte-Sprache.pdf?v=62e1dacd",
+        "original_url": "https://delivery-aktion-mensch.stylelabs.cloud/api/public/content/AM_Jahresbericht_2021_Leichte-Sprache.pdf?v=62e1dacd"
+    },
+    "https://www.marienkrankenhaus.org/fileadmin/user_upload/Broschuere_Leichte_Sprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110207/https://www.marienkrankenhaus.org/fileadmin/user_upload/Broschuere_Leichte_Sprache.pdf",
+        "original_url": "https://www.marienkrankenhaus.org/fileadmin/user_upload/Broschuere_Leichte_Sprache.pdf"
+    },
+    "https://www.evangelisches-krankenhaus-alsterdorf.de/wp-content/uploads/2020/06/Krankenhausaufenthalt_Ges25_LSpr.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110215/https://www.evangelisches-krankenhaus-alsterdorf.de/wp-content/uploads/2020/06/Krankenhausaufenthalt_Ges25_LSpr.pdf",
+        "original_url": "https://www.evangelisches-krankenhaus-alsterdorf.de/wp-content/uploads/2020/06/Krankenhausaufenthalt_Ges25_LSpr.pdf"
+    },
+    "https://shop.bzga.de/pdf/32041003.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110224/https://shop.bzga.de/pdf/32041003.pdf",
+        "original_url": "https://shop.bzga.de/pdf/32041003.pdf"
+    },
+    "https://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/sexualitaet_was_sind_unsere_rechte_leichte_sprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20231024055216/http://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/sexualitaet_was_sind_unsere_rechte_leichte_sprache.pdf",
+        "original_url": "https://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/sexualitaet_was_sind_unsere_rechte_leichte_sprache.pdf"
+    },
+    "https://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/Bro_Verhuetung_leichte_Sprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110339/https://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/Bro_Verhuetung_leichte_Sprache.pdf",
+        "original_url": "https://www.profamilia.de/fileadmin/publikationen/Reihe_Leichte_Sprache/Bro_Verhuetung_leichte_Sprache.pdf"
+    },
+    "https://www.wittekindshof.de/fileadmin/user_upload/Gesamtplanverfahren.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110402/https://www.wittekindshof.de/fileadmin/user_upload/Gesamtplanverfahren.pdf",
+        "original_url": "https://www.wittekindshof.de/fileadmin/user_upload/Gesamtplanverfahren.pdf"
+    },
+    "https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29951&token=e7ea8f3906c03dc96645c075b0967c98d5e34dd4": {
+        "archivierte_url": "http://web.archive.org/web/20250124110540/https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29951&token=e7ea8f3906c03dc96645c075b0967c98d5e34dd4",
+        "original_url": "https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29951&token=e7ea8f3906c03dc96645c075b0967c98d5e34dd4"
+    },
+    "https://www.lrakn.de/site/lrakn/get/params_E-227221840/3302478/KVJS%20Fokus_Wie%20bekomme%20ich%20Eingliederungs-Hilfe_BF.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110553/https://www.lrakn.de/site/lrakn/get/params_E-227221840/3302478/KVJS%20Fokus_Wie%20bekomme%20ich%20Eingliederungs-Hilfe_BF.pdf",
+        "original_url": "https://www.lrakn.de/site/lrakn/get/params_E-227221840/3302478/KVJS%20Fokus_Wie%20bekomme%20ich%20Eingliederungs-Hilfe_BF.pdf"
+    },
+    "https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29949&token=58ffb1df49fb40c47800df9ca491698e0671e1a5": {
+        "archivierte_url": "http://web.archive.org/web/20250124110601/https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29949&token=58ffb1df49fb40c47800df9ca491698e0671e1a5",
+        "original_url": "https://www.kvjs.de/index.php?eID=dumpFile&t=f&f=29949&token=58ffb1df49fb40c47800df9ca491698e0671e1a5"
+    },
+    "https://lhhh.de/wp-content/uploads/2024/02/LHHH_Betreuungsvertrag_LeichteSprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240812111633/https://lhhh.de/wp-content/uploads/2024/02/LHHH_Betreuungsvertrag_LeichteSprache.pdf",
+        "original_url": "https://lhhh.de/wp-content/uploads/2024/02/LHHH_Betreuungsvertrag_LeichteSprache.pdf"
+    },
+    "https://lhhh.de/wp-content/uploads/2023/11/Erklaertext-HiH-in-LS.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240714201748/https://lhhh.de/wp-content/uploads/2023/11/Erklaertext-HiH-in-LS.pdf",
+        "original_url": "https://lhhh.de/wp-content/uploads/2023/11/Erklaertext-HiH-in-LS.pdf"
+    },
+    "https://www.hamburg.de/resource/blob/876404/c2d4a6bd56ec71b75fa6c9ad73f19d9c/heft-verfahrens-lotsen-leichte-sprache-data.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250116100748/https://www.hamburg.de/resource/blob/876404/c2d4a6bd56ec71b75fa6c9ad73f19d9c/heft-verfahrens-lotsen-leichte-sprache-data.pdf",
+        "original_url": "https://www.hamburg.de/resource/blob/876404/c2d4a6bd56ec71b75fa6c9ad73f19d9c/heft-verfahrens-lotsen-leichte-sprache-data.pdf"
+    },
+    "https://team-usability.de/de/leichte-sprache.html": {
+        "archivierte_url": "http://web.archive.org/web/20250124110744/https://team-usability.de/de/leichte-sprache.html",
+        "original_url": "https://team-usability.de/de/leichte-sprache.html"
+    },
+    "https://buergerstiftung-hamburg.de/wp-content/uploads/2023/08/partizipationsfonds_foerderkriterien_ls_20230821.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240803090919/https://buergerstiftung-hamburg.de/wp-content/uploads/2023/08/partizipationsfonds_foerderkriterien_ls_20230821.pdf",
+        "original_url": "https://buergerstiftung-hamburg.de/wp-content/uploads/2023/08/partizipationsfonds_foerderkriterien_ls_20230821.pdf"
+    },
+    "https://lhhh.de/wp-content/uploads/2019/11/2019-11-28-Satzung_LHHH_LeichteSprache.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124110816/https://lhhh.de/wp-content/uploads/2019/11/2019-11-28-Satzung_LHHH_LeichteSprache.pdf",
+        "original_url": "https://lhhh.de/wp-content/uploads/2019/11/2019-11-28-Satzung_LHHH_LeichteSprache.pdf"
+    },
+    "https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a719-hilfe-fuer-opfer-von-gewalttaten-256.pdf?__blob=publicationFile&v=5": {
+        "archivierte_url": "http://web.archive.org/web/20240521122119/https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a719-hilfe-fuer-opfer-von-gewalttaten-256.pdf?__blob=publicationFile&v=5",
+        "original_url": "https://www.bmas.de/SharedDocs/Downloads/DE/Publikationen/a719-hilfe-fuer-opfer-von-gewalttaten-256.pdf?__blob=publicationFile&v=5"
+    },
+    "https://buergerstiftung-hamburg.de/wp-content/uploads/2022/11/20221202_foerderrichtlinie_hamburger_partizipationsfonds.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20230330232117/https://buergerstiftung-hamburg.de/wp-content/uploads/2022/11/20221202_foerderrichtlinie_hamburger_partizipationsfonds.pdf",
+        "original_url": "https://buergerstiftung-hamburg.de/wp-content/uploads/2022/11/20221202_foerderrichtlinie_hamburger_partizipationsfonds.pdf"
+    },
+    "https://www.hamburger-lebenshilfe-werk.de/fileadmin/redakteur/ueber_uns/unsere_qualitaetsversprechen/Qualitaetsversprechen_und_Grundsatztext_Mitarbeiter.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240626155707/https://www.hamburger-lebenshilfe-werk.de/fileadmin/redakteur/ueber_uns/unsere_qualitaetsversprechen/Qualitaetsversprechen_und_Grundsatztext_Mitarbeiter.pdf",
+        "original_url": "https://www.hamburger-lebenshilfe-werk.de/fileadmin/redakteur/ueber_uns/unsere_qualitaetsversprechen/Qualitaetsversprechen_und_Grundsatztext_Mitarbeiter.pdf"
+    },
+    "https://lhhh.de/wp-content/uploads/2017/05/2013-07-11-Satzung-Lebenshilfe-LV-Hamburg-eV.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20240727232248/http://lhhh.de/wp-content/uploads/2017/05/2013-07-11-Satzung-Lebenshilfe-LV-Hamburg-eV.pdf",
+        "original_url": "https://lhhh.de/wp-content/uploads/2017/05/2013-07-11-Satzung-Lebenshilfe-LV-Hamburg-eV.pdf"
+    },
+    "https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Heft-4-rechtliche-Betreuung-2015.pdf": {
+        "archivierte_url": "http://web.archive.org/web/20250124113637/https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Heft-4-rechtliche-Betreuung-2015.pdf",
+        "original_url": "https://www.lebenshilfe.de/fileadmin/Redaktion/PDF/2_Informieren/Heft-4-rechtliche-Betreuung-2015.pdf"
+    },
+    "https://www.hamburg.de/barrierefrei/leichte-sprache/infos-fuer-menschen-mit-behinderung/verfahrens-lotsen-624188": {
+        "archivierte_url": "http://web.archive.org/web/20250124105120/https://www.hamburg.de/barrierefrei/leichte-sprache/infos-fuer-menschen-mit-behinderung/verfahrens-lotsen-624188",
+        "original_url": "https://www.hamburg.de/barrierefrei/leichte-sprache/infos-fuer-menschen-mit-behinderung/verfahrens-lotsen-624188"
     }
 }

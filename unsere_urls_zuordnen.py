@@ -6,7 +6,7 @@ excel_file = "\u00dcbersicht Texte.xlsx"
 json_file = "archive_header.json"
 
 # Spaltennummern (basierend auf nullbasiertem Index)
-url_columns = [2, 5]  # Spalte 3 und 6 sind 2 und 5 im nullbasierten Index
+url_columns = [2, 8]  # Spalte 3 und 9 im nullbasierten Index
 
 # Excel-Datei laden
 dataframe = pd.read_excel(excel_file)
@@ -18,8 +18,13 @@ with open(json_file, "r", encoding="utf-8") as f:
 # Neue Spalten für archivierte URLs hinzufügen
 for column in url_columns:
     archiv_column_name = f"Archivierte URL (Spalte {column + 1})"
+
+    # Prüfen, ob die archivierte URL bereits vorhanden ist
     dataframe[archiv_column_name] = dataframe.iloc[:, column].map(
-        lambda url: archive_data.get(url, {}).get("archivierte_url", "Keine Archiv-URL gefunden")
+        lambda url: (
+            archive_data.get(url, {}).get("archivierte_url", "Keine Archiv-URL gefunden")
+            if pd.notna(url) else "Keine URL"
+        )
     )
 
 # Geänderte Tabelle in eine neue Excel-Datei speichern
