@@ -109,4 +109,3 @@ def parse_all_websites(json_file):
 # Beispielaufruf
 json_file = "archive_header.json"  # JSON-Datei mit den URLs
 parse_all_websites(json_file)
-

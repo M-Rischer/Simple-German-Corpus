@@ -37,6 +37,20 @@ def is_meta_tag_forbidden(url: str) -> bool:
     return False
 
 
+def is_x_robots_tag_forbidden(url: str) -> bool:
+    """Prüft, ob der X-Robots-Tag im HTTP-Header den Wert 'noindex, nofollow' hat."""
+    for _ in range(3):  # Bis zu 3 Versuche
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            response.raise_for_status()
+            x_robots_tag = response.headers.get('X-Robots-Tag', '')
+            return 'noindex' in x_robots_tag and 'nofollow' in x_robots_tag
+        except requests.RequestException as e:
+            print(f"Fehler beim Abrufen des X-Robots-Tags für {url}: {e}")
+            time.sleep(2)  # Warten vor erneutem Versuch
+    return False
+
+
 def is_crawling_allowed(url: str, user_agent: str = "*") -> str:
     """
     Prüft, ob Crawling erlaubt ist, und versucht, auf eine höhere Domain zu gehen, falls nötig.
@@ -58,8 +72,8 @@ def is_crawling_allowed(url: str, user_agent: str = "*") -> str:
             try:
                 response = requests.get(robots_url, headers=headers, timeout=10)
                 if response.status_code == 404:
-                    # Prüfen, ob ein Meta-Tag das Crawling verbietet
-                    if is_meta_tag_forbidden(url):
+                    # Prüfen, ob ein Meta-Tag oder X-Robots-Tag das Crawling verbietet
+                    if is_meta_tag_forbidden(url) or is_x_robots_tag_forbidden(url):
                         return "Nein"
                     return "Ja"
                 elif response.status_code == 200:
