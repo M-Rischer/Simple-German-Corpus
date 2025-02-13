@@ -111,5 +111,5 @@ def main(excel_file_path, archive_header_file):
 if __name__ == "__main__":
     # Beispiel für den Aufruf der Funktion
     excel_file_path = "Übersicht Texte.xlsx"  # Pfad zur Excel-Datei mit den URLs
-    archive_header_file = "archive_header.json"  # Pfad zur JSON-Datei, in der die archivierten URLs gespeichert werden
+    archive_header_file = "unser_archive_header.json"  # Pfad zur JSON-Datei, in der die archivierten URLs gespeichert werden
     main(excel_file_path, archive_header_file)

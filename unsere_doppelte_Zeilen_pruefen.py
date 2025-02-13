@@ -92,4 +92,4 @@ def remove_duplicates(file_path, url_columns):
     print(f"Duplikate entfernt. Aktualisierte Datei gespeichert unter: {updated_file_path}")
 
 # Beispielaufruf der Funktion
-remove_duplicates("URLs.xlsx", url_columns=[1, 2])
+remove_duplicates("urls_2025_LS_StS.xlsx", url_columns=[1, 2])

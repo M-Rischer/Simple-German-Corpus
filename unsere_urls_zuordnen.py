@@ -3,7 +3,7 @@ import json
 
 # Dateinamen
 excel_file = "\u00dcbersicht Texte.xlsx"
-json_file = "archive_header.json"
+json_file = "unser_archive_header.json"
 
 # Spaltennummern (basierend auf nullbasiertem Index)
 url_columns = [2, 8]  # Spalte 3 und 9 im nullbasierten Index

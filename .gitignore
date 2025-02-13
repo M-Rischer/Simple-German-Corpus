@@ -7,9 +7,11 @@ results/*
 !results/hand_aligned
 !results/README.md
 !results/website_samples.pkl
-.txt
-.xlsx
-.json
+*.txt
+*.xlsx
+*.json
 aktion-mensch/
 bar-frankfurt/
 lvr/
+lebenshilfe-main-taunus/
+mdr/

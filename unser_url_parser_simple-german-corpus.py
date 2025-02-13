@@ -7,43 +7,32 @@ import defaultvalues as dfv
 
 def parse_json_files(root_folder, output_excel):
     data_pairs = []  # Use a list to maintain the order of pairs
+    all_entries = {}
 
-    # Walk through directories
+    # Walk through directories and load all JSON entries
     for subdir, _, files in os.walk(root_folder):
         if "parsed_header.json" in files:
             json_path = os.path.join(subdir, "parsed_header.json")
-            
-            # Open and parse the JSON file
             with open(json_path, 'r') as f:
                 try:
                     json_data = json.load(f)
-                    
-                    for entry_key, entry_value in json_data.items():
-                        url = entry_value.get("url")
-                        matching_files = entry_value.get("matching_files", [])
-                        entry_type = entry_value.get("type")
-
-                        # Only process entries with type "LS"
-                        if entry_type == "LS" and url:
-                            url_parts = url.split("/", 8)
-                            base_url = "/".join(url_parts[:7]) 
-
-                            for match in matching_files:
-                                # Replace "__" with "/" in matching_files
-                                formatted_match = match.replace("__", "/")
-                                matching_url = f"{base_url}/{formatted_match}"
-                                if matching_url.endswith("_normal.html"):
-                                    matching_url = matching_url[:-12]  # Remove the last 12 characters "_normal.html"
-                                elif url.endswith(".html"):
-                                    pass
-                                else:
-                                    matching_url = matching_url[:-5]
-                                
-                                # Add the pair to the list in the order they are found
-                                data_pairs.append((url, matching_url))  
-
+                    all_entries.update(json_data)  # Store all entries for lookup
                 except json.JSONDecodeError:
                     print(f"Error decoding JSON in file: {json_path}")
+
+    # Process the entries to match URLs
+    for entry_key, entry_value in all_entries.items():
+        url = entry_value.get("url")
+        matching_files = entry_value.get("matching_files", [])
+        entry_type = entry_value.get("type")
+
+        # Only process entries with type "LS"
+        if entry_type == "LS" and url:
+            for match in matching_files:
+                if match in all_entries:
+                    matching_url = all_entries[match].get("url", "")
+                    if matching_url:
+                        data_pairs.append((url, matching_url))
 
     # Create Excel workbook and sheet
     workbook = openpyxl.Workbook()
@@ -75,6 +64,6 @@ def parse_json_files(root_folder, output_excel):
 
 if __name__ == "__main__":
     root_folder = dfv.repository_location
-    output_excel = "urls.xlsx"
+    output_excel = "urls_sgc_ls_sts.xlsx"
     parse_json_files(root_folder, output_excel)
     print(f"Excel file '{output_excel}' created successfully.")
