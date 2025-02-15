@@ -106,7 +106,8 @@ file_path = 'URLs.xlsx'  # Pfad zur Excel-Datei
 df = pd.read_excel(file_path, engine='openpyxl')
 
 # Filtern der Zeilen mit gültigen URLs
-valid_urls = df.iloc[:, [0, 1]].stack().dropna().unique()  # Extrahiert alle gültigen URLs
+valid_urls = df.iloc[:, 0].dropna().unique()  # Extrahiert alle gültigen URLs (1 Spalte)
+#valid_urls = df.iloc[:, [0, 1]].stack().dropna().unique()  # Extrahiert alle gültigen URLs
 
 # Set, um redundante Domains zu vermeiden
 unique_domains = set()

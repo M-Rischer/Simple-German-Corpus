@@ -1,16 +1,18 @@
+import os
 import pandas as pd
 import urllib.robotparser
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 import time
+import json
 
 headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-        )
-    }
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    )
+}
 
 def is_valid_url(url: str) -> bool:
     """Prüft, ob ein String eine gültige URL ist."""
@@ -20,7 +22,6 @@ def is_valid_url(url: str) -> bool:
         return all([result.scheme, result.netloc])
     except Exception:
         return False
-
 
 def is_meta_tag_forbidden(url: str) -> bool:
     """Prüft, ob das Meta-Tag <meta name="robots" content="noindex, nofollow"> vorhanden ist."""
@@ -36,7 +37,6 @@ def is_meta_tag_forbidden(url: str) -> bool:
             time.sleep(2)  # Warten vor erneutem Versuch
     return False
 
-
 def is_x_robots_tag_forbidden(url: str) -> bool:
     """Prüft, ob der X-Robots-Tag im HTTP-Header den Wert 'noindex, nofollow' hat."""
     for _ in range(3):  # Bis zu 3 Versuche
@@ -49,7 +49,6 @@ def is_x_robots_tag_forbidden(url: str) -> bool:
             print(f"Fehler beim Abrufen des X-Robots-Tags für {url}: {e}")
             time.sleep(2)  # Warten vor erneutem Versuch
     return False
-
 
 def is_crawling_allowed(url: str, user_agent: str = "*") -> str:
     """
@@ -88,13 +87,20 @@ def is_crawling_allowed(url: str, user_agent: str = "*") -> str:
                 time.sleep(2)  # Warten vor erneutem Versuch
     return "Nein"  # Wenn alle Domains nicht zugänglich sind, Crawling verbieten
 
-
 def process_excel(input_file: str, output_file: str, txt_file: str, user_agent: str = "*"):
     """
     Liest URLs aus einer Excel-Datei, prüft die Crawling-Erlaubnis und speichert die Ergebnisse.
     """
-    df = pd.read_excel(input_file)
-    urls_col1 = df.iloc[:, 0]  # Erste Spalte
+    if os.path.exists(input_file):
+        # Wenn die Excel-Datei vorhanden ist
+        df = pd.read_excel(input_file)
+        urls_col1 = df.iloc[:, 0]  # Erste Spalte
+    else:
+        # Wenn die Excel-Datei nicht vorhanden ist, wird JSON verwendet
+        with open("unser_archive_header.json", "r") as f:
+            json_data = json.load(f)
+        urls_col1 = [entry["original_url"] for entry in json_data.values()]
+
     robots_urls = set()
     results_col1 = []
 
@@ -116,13 +122,15 @@ def process_excel(input_file: str, output_file: str, txt_file: str, user_agent: 
         else:
             results_col1.append("")
 
-    while len(results_col1) < len(df):
+    while len(results_col1) < len(urls_col1):
         results_col1.append("")
-    df["Crawling erlaubt (Spalte 1)"] = results_col1
-
-    df.to_excel(output_file, index=False)
+    
+    # Ausgabe in die Excel-Datei
+    df_out = pd.DataFrame({ "URL": urls_col1, "Crawling erlaubt": results_col1 })
+    df_out.to_excel(output_file, index=False)
     print(f"Ergebnisse gespeichert in {output_file}")
 
+    # Speichern der robots.txt URLs in eine Textdatei
     with open(txt_file, "w") as f:
         for robots_url in sorted(robots_urls):
             f.write(f"{robots_url}\n")

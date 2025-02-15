@@ -2,11 +2,11 @@ import pandas as pd
 import json
 
 # Dateinamen
-excel_file = "\u00dcbersicht Texte.xlsx"
-json_file = "unser_archive_header.json"
+excel_file = "Arbeit.xlsx"
+json_file = "unser_archive_header_2.json"
 
 # Spaltennummern (basierend auf nullbasiertem Index)
-url_columns = [2, 8]  # Spalte 3 und 9 im nullbasierten Index
+url_columns = [0, 1]  # Spalte 1 und 2 im nullbasierten Index
 
 # Excel-Datei laden
 dataframe = pd.read_excel(excel_file)
